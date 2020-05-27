@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6, label {
 
 #menu ul > li > a {
     border: 0;
-    color: inherit;
+    color: #222222;
     display: block;
     font-size: 28px;
     letter-spacing: 0.225em;
@@ -154,8 +154,7 @@ h1, h2, h3, h4, h5, h6, label {
 }
 
 #menu ul > li > a:hover {
-    font-weight: bold;
-    color: #222222;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 736px) {
@@ -268,16 +267,6 @@ body.is-menu-visible #menu {
     padding: 0;
 }
 
-#header nav > ul > li > a {
-    border: 0;
-    color: #f9f9fa;
-    display: block;
-    font-size: 0.8em;
-    letter-spacing: 0.225em;
-    padding: 0 1.5em;
-    text-transform: uppercase;
-}
-
 #header nav > ul > li > a.menuToggle {
     outline: 0;
     position: relative;
@@ -332,7 +321,7 @@ body.is-menu-visible #menu {
     background: #ffffff;
     box-shadow: 0 14px 25px rgba(0,0,0,0.16);
 }
-
-.inner {
-
+.email-text {
+    font-size: 24px;
+    font-weight: bold;
 }
