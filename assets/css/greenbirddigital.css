@@ -1,59 +1,114 @@
 /**
-green1: #bbf428
-green2: #a6e074;
-white: #f9f9fa;
-black_logo: #111111;
-black_text: #222222;
+    Colors
+    green: #bbf428
+    light: #f9f9fa;
+    dark: #111111;
+    default: #888888;
  */
 
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+/* Css */
 @import url('main.css');
+
+/* Pages */
+.page-1-1 {
+    height: 100vh;
+}
+
+.page-2-1 {
+    height: 50vh;
+}
+
+.page-3-1 {
+    height: 33.33vh;
+}
+
+.page-4-1 {
+    height: 25vh;
+}
+
+/* Backgrounds */
+.background-light {
+    background: #f9f9fa;
+}
+
+.background-green {
+    background: #bbf428;
+}
+
+.background-dark {
+    background: #111111;
+}
+
+/* Text */
+.content-light {
+    color: #f9f9fa;
+}
+
+.content-green {
+    color: #bbf428;
+}
+
+.content-default {
+    color: #888888;
+}
+
+.content-dark {
+    color: #111111;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
 .logo {
     pointer-events: none;
     font-size: 24px;
-    background: #bbf428;
     padding: 0 1.5em;
-    left: 30px;
+    left: 40px;
+    font-family: "Major Mono Display";
 }
 
-.logo>a {
-    color: #111111;
-    font-family: "Major Mono Display";
+/* Header */
+
+header > .logo {
+    background: transparent;
+    position: relative;
+    top: 20px;
+}
+
+header > .logo > a {
+    color: #bbf428;
+    border: 1px solid #bbf428;
+    padding: 20px;
+}
+
+#header {
+    -moz-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    -ms-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    background: #f9f9fa;
+    height: 5em;
+    left: 0;
+    line-height: 3em;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10000;
 }
 
 .hero-text {
     font-size: 48px;
 }
 
-@media screen and (max-width: 1680px) {
-    .hero-text {
-        font-size: 48px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .hero-text {
-        font-size: 36px;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    .hero-text {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .hero-text {
-        font-size: 12px;
-    }
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f9f9fa;
-    color: #595f71;
+    color: #888888;
 }
 
 h1,
@@ -64,10 +119,6 @@ h5,
 h6,
 label {
     color: #333333;
-}
-
-.homepage.hero-banner {
-    background: #f9f9fa;
 }
 
 .logo-text {
@@ -164,12 +215,6 @@ label {
     font-weight: 600;
 }
 
-@media screen and (max-width: 736px) {
-    #menu ul>li>a {
-        line-height: 3em;
-    }
-}
-
 #menu .close {
     background-image: url("../../images/icons/close.png");
     background-position: 4.85em 1em;
@@ -183,12 +228,6 @@ label {
     right: 40px;
     top: 30px;
     vertical-align: middle;
-}
-
-@media screen and (max-width: 736px) {
-    #menu {
-        padding: 3em 1.5em;
-    }
 }
 
 body.is-menu-visible #page-wrapper {
@@ -206,55 +245,11 @@ body.is-menu-visible #menu {
     transform: translateX(0);
 }
 
-
-/* Header */
-
-#header {
-    -moz-transition: background-color 0.2s ease;
-    -webkit-transition: background-color 0.2s ease;
-    -ms-transition: background-color 0.2s ease;
-    transition: background-color 0.2s ease;
-    background: #2e3842;
-    height: 3em;
-    left: 0;
-    line-height: 3em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10000;
-}
-
-#header h1 {
-    -moz-transition: opacity 0.2s ease;
-    -webkit-transition: opacity 0.2s ease;
-    -ms-transition: opacity 0.2s ease;
-    transition: opacity 0.2s ease;
-    height: inherit;
-    /*left: 1.25em;*/
-    line-height: inherit;
-    position: absolute;
-    top: 0;
-}
-
-#header h1 a {
-    border: 0;
-    display: block;
-    height: inherit;
-    line-height: inherit;
-}
-
-@media screen and (max-width: 736px) {
-    #header h1 a {
-        font-size: 0.8em;
-    }
-}
-
 #header nav {
-    height: inherit;
     line-height: inherit;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 40px;
+    top: 20px;
 }
 
 #header nav>ul {
@@ -272,7 +267,6 @@ body.is-menu-visible #menu {
 #header nav>ul>li>a.menuToggle {
     outline: 0;
     position: relative;
-    right: 40px;
 }
 
 #header nav>ul>li>a.menuToggle:after {
@@ -286,29 +280,8 @@ body.is-menu-visible #menu {
     width: 3em;
 }
 
-@media screen and (max-width: 736px) {
-    #header nav>ul>li>a.menuToggle {
-        padding: 0;
-        right: 20px;
-    }
-    #header nav>ul>li>a.menuToggle span {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    #header nav>ul>li>a {
-        padding: 0 0 0 1.5em;
-    }
-}
-
 #header nav>ul>li:first-child {
     margin-left: 0;
-}
-
-#header.alt {
-    background: transparent;
-    top: 30px;
 }
 
 .about-us {
@@ -323,4 +296,86 @@ body.is-menu-visible #menu {
 .email-text {
     font-size: 24px;
     font-weight: 500;
+}
+
+footer .logo {
+    background: transparent;
+    padding: 40px;
+}
+
+footer > .inner > .logo > a {
+    color: #bbf428;
+    border: 1px solid #bbf428;
+    padding: 20px;
+}
+
+
+
+
+/** ----- Responsive ----- **/
+@media screen and (max-width: 1680px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 736px) {
+    #header {
+        height: 7em;
+    }
+
+    .logo {
+        font-size: 14px;
+        padding: 0 1.5em;
+        left: 20px;
+    }
+
+    #header .logo {
+        top: 30px;
+    }
+
+    #header > nav {
+        right: 20px;
+    }
+
+    #header nav > ul > li > a.menuToggle {
+        padding: 0;
+    }
+
+    #header nav > ul > li > a.menuToggle span {
+        display: none;
+    }
+
+    #header nav > ul > li > a {
+        padding: 0 0 0 1.5em;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    #menu {
+        padding: 3em 1.5em;
+    }
+
+    #menu ul > li > a {
+        line-height: 3em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo {
+        font-size: 12px;
+        padding: 0 1.5em;
+        left: 20px;
+    }
+    .hero-text {
+        font-size: 12px;
+    }
+
+    #header > nav {
+        right: 20px;
+    }
 }
