@@ -1,9 +1,10 @@
 /**
     Colors
-    green: #bbf428
+    green1: #bbf428
+    green2: #8cff00
     light: #f9f9fa;
     dark: #111111;
-    default: #888888;
+    default: #444444;
  */
 
 /* Fonts */
@@ -36,7 +37,7 @@
 }
 
 .background-green {
-    background: #bbf428;
+    background: #8cff00;
 }
 
 .background-dark {
@@ -49,11 +50,11 @@
 }
 
 .content-green {
-    color: #bbf428;
+    color: #8cff00;
 }
 
 .content-default {
-    color: #888888;
+    color: #444444;
 }
 
 .content-dark {
@@ -62,6 +63,16 @@
 
 .no-text-decoration {
     text-decoration: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #444444;
+    background: #8cff00;
+}
+
+::selection {
+    color: #444444;
+    background: #8cff00;
 }
 
 .logo {
@@ -80,9 +91,13 @@ header > .logo {
     top: 20px;
 }
 
+header > .logo > img {
+    width: 10em;
+}
+
 header > .logo > a {
-    color: #bbf428;
-    border: 1px solid #bbf428;
+    color: #8cff00;
+    border: 1px solid #8cff00;
     padding: 20px;
 }
 
@@ -108,7 +123,7 @@ header > .logo > a {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f9f9fa;
-    color: #888888;
+    color: #444444;
 }
 
 h1,
@@ -123,7 +138,7 @@ label {
 
 .logo-text {
     font-family: 'Major Mono Display', monospace;
-    /*color: #bbf428 !important;*/
+    /*color: #8cff00 !important;*/
 }
 
 .subtitle-text {
@@ -170,7 +185,7 @@ label {
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
     -webkit-overflow-scrolling: touch;
-    background: #bbf428;
+    background: #8cff00;
     color: #ffffff;
     height: 100%;
     max-width: 100%;
@@ -304,8 +319,8 @@ footer .logo {
 }
 
 footer > .inner > .logo > a {
-    color: #bbf428;
-    border: 1px solid #bbf428;
+    color: #8cff00;
+    border: 1px solid #8cff00;
     padding: 20px;
 }
 
