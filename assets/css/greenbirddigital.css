@@ -378,6 +378,11 @@ footer > .inner > .logo > a {
     #menu ul > li > a {
         line-height: 3em;
     }
+
+    footer > .inner > .logo > img {
+        width: 16em;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -392,5 +397,9 @@ footer > .inner > .logo > a {
 
     #header > nav {
         right: 20px;
+    }
+
+    footer > .inner > .logo > img {
+        width: 16em;
     }
 }
