@@ -2,9 +2,10 @@
     Colors
     green1: #bbf428
     green2: #8cff00
-    light: #f9f9fa;
+    light1: #f9f9fa;
+    light2: #ededed;
     dark: #111111;
-    default: #444444;
+    default: #222222;
  */
 
 /* Fonts */
@@ -33,7 +34,7 @@
 
 /* Backgrounds */
 .background-light {
-    background: #f9f9fa;
+    background: #ededed;
 }
 
 .background-green {
@@ -46,7 +47,7 @@
 
 /* Text */
 .content-light {
-    color: #f9f9fa;
+    color: #ededed;
 }
 
 .content-green {
@@ -54,11 +55,15 @@
 }
 
 .content-default {
-    color: #444444;
+    color: #222222;
 }
 
 .content-dark {
-    color: #111111;
+    color: #080808;
+}
+
+.content-mute {
+    color: #888888;
 }
 
 .no-text-decoration {
@@ -66,13 +71,13 @@
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: #444444;
-    background: #8cff00;
+    color: #ededed;
+    background: #080808;
 }
 
 ::selection {
-    color: #444444;
-    background: #8cff00;
+    color: #ededed;
+    background: #080808;
 }
 
 .logo {
@@ -106,7 +111,7 @@ header > .logo > a {
     -webkit-transition: background-color 0.2s ease;
     -ms-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
-    background: #f9f9fa;
+    background: #ededed;
     height: 5em;
     left: 0;
     line-height: 3em;
@@ -122,8 +127,8 @@ header > .logo > a {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9fa;
-    color: #444444;
+    background-color: #ededed;
+    color: #222222;
 }
 
 h1,
@@ -136,13 +141,8 @@ label {
     color: #333333;
 }
 
-.logo-text {
-    font-family: 'Major Mono Display', monospace;
-    /*color: #8cff00 !important;*/
-}
-
 .subtitle-text {
-    color: #f9f9fa;
+    color: #ededed;
 }
 
 .banner.style5 .content {
@@ -150,7 +150,7 @@ label {
 }
 
 .spotlight .image {
-    background-color: #f9f9fa;
+    background-color: #ededed;
 }
 
 #page-wrapper {
@@ -185,8 +185,8 @@ label {
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
     -webkit-overflow-scrolling: touch;
-    background: #8cff00;
-    color: #ffffff;
+    background: #080808;
+    color: #ededed;
     height: 100%;
     max-width: 100%;
     overflow-y: auto;
@@ -217,7 +217,7 @@ label {
 
 #menu ul>li>a {
     border: 0;
-    color: #222222;
+    color: #ededed;
     display: block;
     font-size: 28px;
     letter-spacing: 0.225em;
@@ -318,22 +318,24 @@ footer .logo {
     padding: 40px;
 }
 
-footer > .inner > .logo > a {
-    color: #8cff00;
-    border: 1px solid #8cff00;
-    padding: 20px;
-}
-
-
-
-
 /** ----- Responsive ----- **/
 @media screen and (max-width: 1680px) {
 
 }
 
 @media screen and (max-width: 1280px) {
+    .logo {
+        padding: 0.5em 0 0 1.5em;
+        left: 20px;
+    }
 
+    header > .logo > img {
+        width: 16em;
+    }
+
+    .hero-text {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 736px) {
@@ -342,13 +344,16 @@ footer > .inner > .logo > a {
     }
 
     .logo {
-        font-size: 14px;
-        padding: 0 1.5em;
+        padding: 0;
         left: 20px;
     }
 
     #header .logo {
         top: 30px;
+    }
+
+    header > .logo > img {
+        width: 10em;
     }
 
     #header > nav {
@@ -380,19 +385,23 @@ footer > .inner > .logo > a {
     }
 
     footer > .inner > .logo > img {
-        width: 16em;
+        width: 10em;
     }
 
 }
 
 @media screen and (max-width: 360px) {
     .logo {
-        font-size: 12px;
-        padding: 0 1.5em;
-        left: 20px;
+        padding: 0 0 0 20px;
+        left: 10px;
     }
+
+    header > .logo > img {
+        width: 8em;
+    }
+
     .hero-text {
-        font-size: 12px;
+        font-size: 24px;
     }
 
     #header > nav {
@@ -400,6 +409,6 @@ footer > .inner > .logo > a {
     }
 
     footer > .inner > .logo > img {
-        width: 16em;
+        width: 8em;
     }
 }
